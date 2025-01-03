@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - My App</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Register</h2>
+    <form id="registerForm">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <label for="role">Role:</label>
+      <select id="role" name="role" required>
+        <option value="seeker">Seeker</option>
+        <option value="company">Company</option>
+      </select><br><br>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <div id="registerMessage"></div>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </div>
+
+  <script src="./js/register.js"></script>
+</body>
+</html>

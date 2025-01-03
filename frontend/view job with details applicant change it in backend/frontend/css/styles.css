@@ -1,0 +1,199 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(236,237,242);
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(90deg, #007bff, #00bcd4); /* Gradient background for the header */
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Montserrat', sans-serif; /* Applying the Montserrat font for the header */
+}
+
+/* Logo Styling */
+header .logo h2 {
+  font-family: 'Lora', serif; /* Elegant font for the logo */
+  font-weight: 700;
+  font-size: 2.2rem; /* Reduced size */
+  letter-spacing: 1.5px;
+  transition: transform 0.3s ease-in-out;
+  color: #ffffff;
+}
+
+header .logo h2:hover {
+  transform: scale(1.1); /* Logo scale effect */
+  color: #ffffff; /* Slight color change when hovered */
+}
+
+/* Button (Login) Styles */
+header .btn {
+  font-family: 'Montserrat', sans-serif; /* Using Montserrat for buttons */
+  font-weight: 600;
+  font-size: 1rem; /* Reduced size */
+  padding: 8px 18px;
+  border: none;
+  background-color: #ffffff;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+}
+
+/* Button Hover Effects */
+header .btn:hover {
+  background-color: #00bcd4;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 188, 212, 0.3);
+  transform: translateY(-2px); /* Button lift effect */
+}
+
+/* Main Section Styles */
+.container {
+  padding: 3rem 0;
+  max-width: 1000px;
+  margin: 0 auto;  /* Centers the container */
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;  /* Using Montserrat font */
+  font-weight: 700;
+  font-size: 2rem; /* Reduced size */
+  color: #333;
+  text-align: center; /* Ensures the title is centered */
+  margin-bottom: 1.5rem; /* Adds spacing below the title */
+}
+
+p {
+  font-family: 'Lora', serif;  /* Elegant serif font */
+  color: #555;
+  font-size: 1.1rem; /* Slightly larger text for readability */
+  margin-top: 1rem;
+  text-align: center;  /* Centers the paragraph */
+  line-height: 1.7;
+}
+
+/* Button Styling */
+button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  padding: 10px 20px;  /* Smaller padding */
+  font-size: 0.9rem;  /* Reduced font size */
+  transition: all 0.3s ease;
+  text-align: center;
+  border-radius: 10px; /* Rounded corners */
+  margin: 0px 0; /* Adds vertical spacing between buttons */
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Adding background color and spacing to the buttons */
+.btn-primary {
+  background: linear-gradient(90deg, #007bff, #00bcd4); /* Gradient like header */
+  color: white;
+}
+
+.btn-info {
+  background: linear-gradient(90deg, #007bff, #00bcd4); /* Gradient like header */
+  color: white;
+}
+
+button:active {
+  transform: scale(1.02); /* Slight shrink on click */
+}
+
+/* Image Section Styling */
+.image-section {
+  background-color: #f1f1f1;
+  padding: 0;  /* Remove padding */
+  margin: 0;  /* Remove margin */
+  height: 100vh;  /* Full height of the viewport */
+  width: 100%;  /* Full width of the viewport */
+  position: relative;  /* Allows the image to fill the section */
+}
+
+.image-section .row,
+.image-section .col-12,
+.image-section .col-md-8 {
+  padding: 0;  /* Remove padding from row and columns */
+  margin: 0;  /* Remove margin from row and columns */
+  height: 100%;  /* Ensure row and columns fill the section */
+}
+
+.image-section img {
+  position: absolute;  /* Position the image absolutely within the section */
+  top: 0;  /* Align image to the top */
+  left: 0;  /* Align image to the left */
+  width: 100%;  /* Stretch the image to 100% of the section width */
+  height: 100%;  /* Stretch the image to 100% of the section height */
+  object-fit: cover;  /* Ensure the image covers the section without distortion */
+  border-radius: 0;  /* Remove any border-radius */
+  box-shadow: none;  /* Remove any shadow */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #343a40;
+  padding: 4rem 0;
+  color: white;
+}
+
+footer p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem; /* Reduced size */
+  color: #dcdcdc;
+}
+
+/* Custom Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Animation for Footer Text */
+footer .container p {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header .logo h2 {
+    font-size: 1.8rem; /* Smaller size for responsiveness */
+  }
+
+  .container h1 {
+    font-size: 2rem; /* Smaller size for smaller screens */
+  }
+
+  .container p {
+    font-size: 0.95rem; /* Slightly smaller font size for smaller screens */
+  }
+
+  .container h2 {
+    font-size: 1.8rem; /* Smaller size for h2 */
+  }
+
+  .container h4 {
+    font-size: 1.4rem; /* Smaller size for h4 */
+  }
+}
